@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Libros online</title>
+</head>
+<body>
+    <header>
+        <h1 class="h1-header">Librosonline</h1>
+        <h2 class="h2-header">Tu biblioteca digital</h2>
+    </header>
+
+    <div class="page-content">
+        <div class="product-con">
+            <h3 class="product-title">El Hobbit - ilustrado por Alan Lee - J.R.R. Tolkien</h3>
+            <img class="product-image" src="./images/product-1.jpg" alt="el-hobbit-ilustrado-por-Alan-Lee-portada">
+            <h4 class="product-price">$10500</h4>
+            <button class="button-add" id="1">Agregar</button>
+        </div>
+
+        <div class="product-con">
+            <h3 class="product-title">El Señor de los Anillos trilogia completa estuche - J.R.R. Tolkien</h3>
+            <img class="product-image" src="./images/product-2.jpg" alt="el-señor-de-los-anillos-trilogia-completa-estuche-portada">
+            <h4 class="product-price">$16000</h4>
+            <button class="button-add" id="2">Agregar</button>
+        </div>
+
+        <div class="product-con">
+            <h3 class="product-title">Harry Potter estuche 7 libros saga completa - J.K Rowling</h3>
+            <img class="product-image" src="./images/product-3.jpg" alt="harry-potter-estuche-siete-libros-saga-completa-portada">
+            <h4 class="product-price">$15500</h4>
+            <button class="button-add" id="3">Agregar</button>
+        </div>
+
+        <div class="product-con">
+            <h3 class="product-title">Una Vacante Imprevista - J.K. Rowling</h3>
+            <img class="product-image" src="./images/product-4.jpg" alt="Una-vacante-imprevista-portada">
+            <h4 class="product-price">$5200</h4>
+            <button class="button-add" id="4">Agregar</button>
+        </div>
+
+        <div class="product-con">
+            <h3 class="product-title">La Llamada de Cthulhu - H.P.Lovecraft</h3>
+            <img class="product-image" src="./images/product-5.jpg" alt="la-llama-de-Cthulhu-portada">
+            <h4 class="product-price">$1700</h4>
+            <button class="button-add" id="5">Agregar</button>
+        </div>
+
+        <div class="product-con">
+            <h3 class="product-title">La Sombra Fuera del Tiempo - H-P-Lovecraft</h3>
+            <img class="product-image" src="./images/product-6.jpg" alt="la-sombra-fuera-del-tiempo-portada">
+            <h4 class="product-price">$7300</h4>
+            <button class="button-add" id="6">Agregar</button>
+        </div>
+    </div>
+
+        <section class="shopping-cart">
+            <div class="container">
+                <h1 class="text-center">CARRITO</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="shopping-cart-header">
+                            <h6>Producto</h6>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="shopping-cart-header">
+                            <h6 class="text-truncate">Precio</h6>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="shopping-cart-header">
+                            <h6>Cantidad</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping-cart-items shoppingCartItemsContainer">
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="shopping-cart-total d-flex align-items-center">
+                            <p class="mb-0">Total</p>
+                            <p class="ml-4 mb-0 shoppingCartTotal">0$</p>
+                            <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                                data-delay="2000">
+                                <div class="toast-header">
+                                    <span>✅</span>
+                                    <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="toast-body text-white">
+                                    Se aumentó correctamente la cantidad
+                                </div>
+                            </div>
+                            <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                                data-target="#comprarModal">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Pronto recibirá su pedido</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-dark p-3 mt-5">
+            <p class="text-center m-0 text-muted">Copyright 2022 Librosonline</p>
+        </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+    <script src="proyectojavascript.js"></script>
+
+</body>
+</html>
+

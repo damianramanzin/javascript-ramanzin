@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "name": "El Hobbit",
+        "price": "10500",
+        "stock": "5",
+        "image": "images/product-1"
+    },
+    {
+        "id":2,
+        "name": "El Señor de los Anillos",
+        "price": "16000",
+        "stock": "5",
+        "image": "images/product-2"
+    },
+    {
+        "id":3,
+        "name": "Harry Potter estuche",
+        "price": "15500",
+        "stock": "5",
+        "image": "images/product-3"
+    }
+    {
+        "id":4,
+        "name": "Una Vacante Imprevista",
+        "price": "5200",
+        "stock": "5",
+        "image": "images/product-4"
+    }
+    {
+        "id":5,
+        "name": "La Llamada de Cthulhu",
+        "price": "1700",
+        "stock": "5",
+        "image": "images/product-5"
+    }
+    {
+        "id":6,
+        "name": "La Sombra del Tiempo",
+        "price": "7300",
+        "stock": "5",
+        "image": "images/product-6"
+    }
+]
